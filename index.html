@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+    <a href="https://app.aluracursos.com/dashboard">
+        <img class="logo" src="assets/images/Logo.png" alt="logo de alura">
+    </a>
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="60" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="box-nothing-message">
+                <img src="assets/images/Muñeco.png" class="background-message" />
+                    <h1>Ningún mensaje fue encontrado</h1>
+                    
+            <p class="subtitulo" id="subtitulo">Ingresa el texto que desees encriptar o<br> desencriptar.</p>
+            </div>
+            <div class="box-all-message">
+                <textarea  class="mensaje" ></textarea>
+                <button class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Challenge Encriptador 2024 richard sequea</p>
+        <p>Redes 
+            <a href="www.linkedin.com/in/richard-alvarado-675044305">Linkedin</a>, 
+            <a href="https://github.com/raastem">GitHub</a>, 
+            <a href="https://app.aluracursos.com/dashboard">Alura</a>
+        </p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
